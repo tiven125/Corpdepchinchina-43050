@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--? bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../css/styles.css">
     <title>Calendario Eventos </title>
 </head>
@@ -14,14 +18,17 @@
     <header>
         <nav>
             <div>
-                <a href="#"> <img src="../img/logow.png" alt="Logo de la Corporación Deportiva Atlético Chinchiná"></a>
+                <a href="../index.html"> <img src="../img/logow.png"
+                        alt="Logo de la Corporación Deportiva Atlético Chinchiná"></a>
             </div>
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="/page/nosotros.html">Acerca de nosotros</a></li>
-                <li><a href="/page/entrenamientos.html">Programas y entrenamientos</a></li>
-                <li><a href="/page/calendarioEventos.html">Calendario de eventos</a></li>
-                <li><a href="/page/contacto.html">Contacto</a></li>
+                <li></li>
+
+                <li><a class="cta_enlace" href="../index.html">Inicio</a></li>
+                <li><a class="cta_enlace" href="nosotros.html">Acerca de nosotros</a></li>
+                <li><a class="cta_enlace" href="entrenamientos.html">Programas y entrenamientos</a></li>
+                <li><a class="cta_enlace" href="calendarioEventos.html">Calendario de eventos</a></li>
+                <li><a class="cta_enlace" href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -61,36 +68,60 @@
                 width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
+            <footer>
 
-            <form>
-                <form>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+                <div class="footer-section">
+                    <h2>Mapa</h2>
+                    <div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15898.719093700924!2d-75.6091692!3d4.99275875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1689177745119!5m2!1ses!2sco"
+                            width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
 
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" required>
+                <div class="footer-section">
+                    <h2>Comentarios</h2>
+                    <form>
+                        <form>
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
 
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico" required>
+                            <label for="apellido">Apellido:</label>
+                            <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" required>
 
-                    <label for="telefono">Teléfono:</label>
-                    <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su número de teléfono"
-                        required>
+                            <label for="email">Correo electrónico:</label>
+                            <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico"
+                                required>
 
-                    <button type="submit">Enviar</button>
-                </form>
-            </form>
-        </div>
+                            <label for="telefono">Teléfono:</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su número de teléfono"
+                                required>
 
-        <div>
-            <a href="https://web.facebook.com/luiiza.hoyozz.5" target="_blank"><img src="img/facebook.png" alt=""></a>
-            <a href="https://www.instagram.com/tiven125/" target="_blank"><img src="img/instagram.png" alt=""></a>
-        </div>
+                            <button type="submit">Enviar</button>
+                        </form>
+                </div>
 
-        <p>Derechos de autor © Corporación Deportiva Atlético Chinchiná. Todos los derechos reservados.</p>
-    </footer>
+                <div class="footer-section">
+                    <h2>Redes Sociales</h2>
+                    <div>
+                        <a href="https://web.facebook.com/luiiza.hoyozz.5" target="_blank"><img src="img/facebook.png"
+                                alt=""></a>
+                        <a href="https://www.instagram.com/tiven125/" target="_blank"><img src="img/instagram.png"
+                                alt=""></a>
+                    </div>
+                </div>
+            </footer>
+            <div class="copyright">
+                <p>Derechos de autor © Corporación Deportiva Atlético Chinchiná. Todos los derechos reservados.</p>
+            </div>
 
 
+            <!--? bootstrap -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+                crossorigin="anonymous"></script>
 </body>
 
 </html>
