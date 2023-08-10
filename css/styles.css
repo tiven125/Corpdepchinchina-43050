@@ -48,7 +48,7 @@ header nav div img {
 
 /*? Responsi Movil header */
 
-@media (max-width: 390px) {
+@media (min-width: 350px) and (max-width: 800px) {
   header nav {
     flex-direction: column;
     align-items: center;
@@ -102,7 +102,7 @@ header nav div img {
 
 /*? Responsi Movil */
 
-@media (max-width: 390px) {
+@media (min-width: 350px) and (max-width: 800px) {
   .hero {
     background-size: 500px 550px cover;
   }
@@ -119,19 +119,7 @@ header nav div img {
   align-items: center;
   margin: 20px;
   padding: 10px;
-  position: relative;
-  background: linear-gradient(
-      90deg,
-      rgba(119, 114, 231, 0.479) 0%,
-      rgba(26, 0, 12, 0.507) 1%,
-      rgba(6, 184, 44, 0.315) 256%
-    ),
-    url(../img/bannerfondoDos.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  width: 100%;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .imagen_noticia {
@@ -153,13 +141,13 @@ header nav div img {
   font-size: 1rem;
   text-transform: uppercase;
   padding: 15px;
-  color: rgb(255, 255, 255);
+  color: red;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 /*? Responsi Movil Noticias */
 
-@media (max-width: 390px) {
+@media (min-width: 350px) and (max-width: 800px) {
   .noticia {
     flex-direction: column;
   }
@@ -180,7 +168,7 @@ header nav div img {
 }
 
 .categoria {
-  border: 1px solid rgb(0, 50, 214);
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.473);
   padding: 20px;
   text-align: center;
 }
@@ -198,15 +186,15 @@ header nav div img {
   margin-bottom: 25px;
 }
 .categorias_parrafo {
+  margin: 35px;
   color: black;
   font-size: 1rem;
-  font-family: sans-serif;
-  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /*? Responsi Movil Categorias */
 
-@media screen and (max-width: 390px) {
+@media (min-width: 350px) and (max-width: 800px) {
   .categorias {
     grid-template-columns: 1fr;
   }
@@ -308,7 +296,7 @@ h2 {
   margin-bottom: 10px;
 }
 
-@media (max-width: 390px) {
+@media (min-width: 350px) and (max-width: 800px) {
   .footer-section {
     flex-basis: 100%;
     margin-bottom: 20px;
@@ -381,9 +369,100 @@ button {
 }
 
 .slide img {
-  height: 60vh;
+  height: 70vh;
 }
 
+.acerca-de {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.imagen img {
+  max-width: 100%;
+  height: auto;
+}
+
+.contenido {
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/*? Responsy Movil */
+
+@media (min-width: 350px) {
+  .acerca-de {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .imagen {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .contenido {
+    flex: 2;
+    padding: 20px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 800px) {
+  .acerca-de {
+    padding: 50px;
+  }
+}
+
+/*? section de Galeria */
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.gallery__title {
+  margin-top: 50px;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.gallery__title::after {
+  content: "";
+  display: block;
+  height: 4px;
+  background: crimson;
+  width: 200px;
+  margin-top: 20px;
+}
+
+.gallery__grid {
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 10px;
+  grid-auto-rows: 350px;
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 /* !Css Programas y entrenamientos */
 
 .estadio_verdum {
