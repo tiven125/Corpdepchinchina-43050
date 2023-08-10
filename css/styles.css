@@ -509,3 +509,12 @@ p {
 .carousel-caption li {
   list-style: none;
 }
+
+@media (min-width: 350px) and (max-width: 800px) {
+  .card img {
+    width: 30vh;
+  }
+  .carousel-caption li {
+    font-size: 10px;
+  }
+}
