@@ -174,7 +174,7 @@ header nav div img {
 }
 
 .categorias div img {
-  max-width: 100%;
+  max-width: 70%;
   height: auto;
 }
 
@@ -250,6 +250,17 @@ header nav div img {
 
 .fixed_tienda img {
   width: 50px;
+}
+
+@media (min-width: 351px) and (max-width: 800px) {
+  .fixed {
+    width: 150px;
+  }
+
+  .fixed_tienda {
+    left: 20px;
+    width: 100px;
+  }
 }
 
 /*? PAginacion */
@@ -483,10 +494,18 @@ p {
 }
 
 .sedes_entrenamineto {
-  width: 100%;
+  width: 80%;
   margin: 45px;
 }
 
 .card img {
   width: 60vh;
+}
+
+.carousel-caption h5 {
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+.carousel-caption li {
+  list-style: none;
 }
