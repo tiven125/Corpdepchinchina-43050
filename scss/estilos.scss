@@ -518,6 +518,16 @@ form {
   }
 }
 
+@media (min-width: 350px) and (max-width: 800px) {
+  .calendario {
+    background-size: 500px 550px cover;
+  }
+  .calendario div p {
+    font-family: "Old Standard TT", serif;
+    font-size: 1.5rem;
+  }
+}
+
 // Contacto
 .hero_contacto {
   @include contenedorImagen;
@@ -543,6 +553,17 @@ form {
     }
   }
 }
+
+@media (min-width: 350px) and (max-width: 800px) {
+  .hero_contacto {
+    background-size: 500px 550px cover;
+  }
+  .hero_contacto div p {
+    font-family: "Old Standard TT", serif;
+    font-size: 1.5rem;
+  }
+}
+
 // Estilos finales del Footer
 footer {
   @extend %base-styles;
