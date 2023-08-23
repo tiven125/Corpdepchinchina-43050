@@ -1,0 +1,525 @@
+@charset "UTF-8";
+footer, .hero_contacto, .calendario, .acerca-de .contenido, .acerca-de .imagen, .acerca-de, .slide, .estadio_verdum .sedes_entrenamineto, .estadio_verdum, .container, form, .paginacion, .fixed_tienda, .fixed, .testimonio_contenedor, .categorias, .noticia, .hero, header nav {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header nav {
+  background-color: #f8f8f8;
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+header nav ul li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  padding: 20px;
+}
+header nav div img {
+  max-width: 70px;
+  left: 210px;
+  top: 10px;
+}
+
+.cta_enlace {
+  text-decoration: none;
+  color: red;
+  cursor: pointer;
+}
+.cta_enlace:hover {
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}
+
+/*? Responsi Movil header */
+@media (min-width: 350px) and (max-width: 800px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav ul {
+    flex-direction: column;
+  }
+  header nav ul li {
+    padding: 5px;
+  }
+}
+.hero {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  color: white;
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgba(121, 9, 63, 0.5) 1%, rgb(0, 50, 214) 256%), url(../img/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero div {
+  max-width: 70vw;
+  text-align: center;
+}
+.hero div p {
+  font-family: "Old Standard TT", serif;
+  font-size: 3rem;
+  margin: 40px;
+}
+
+@media (min-width: 350px) and (max-width: 800px) {
+  .hero {
+    background-size: 500px 550px cover;
+  }
+  .hero div p {
+    font-family: "Old Standard TT", serif;
+    font-size: 1.5rem;
+  }
+}
+.noticia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.noticia .imagen_noticia {
+  flex: 1;
+  padding-right: 10px;
+}
+.noticia .imagen_noticia img {
+  max-width: 100%;
+  height: auto;
+}
+.noticia .contenido_noticia {
+  flex: 2;
+  text-align: center;
+}
+.noticia .noticia_titulos {
+  font-size: 1em;
+  text-transform: uppercase;
+  padding: 15px;
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media (min-width: 350px) and (max-width: 800px) {
+  .noticia {
+    flex-direction: column;
+  }
+  .noticia .imagen {
+    padding-right: 0;
+    padding-bottom: 10px;
+  }
+}
+
+.categorias {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  gap: 10px;
+  padding: 20px;
+}
+.categorias .categoria {
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.473);
+  padding: 20px;
+  text-align: center;
+}
+.categorias .categoria img {
+  max-width: 100%;
+  height: auto;
+}
+.categorias .categorias_titulo {
+  background-color: rgb(0, 50, 214);
+  color: white;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+.categorias .categorias_parrafo {
+  margin: 35px;
+  color: black;
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media (min-width: 350px) and (max-width: 800px) {
+  .categorias {
+    grid-template-columns: 1fr;
+  }
+}
+
+.testimonio_contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.testimonio_contenedor .card_testimonio {
+  width: 300px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.testimonio_contenedor .card_testimonio img {
+  width: 150px;
+  border-radius: 50%;
+}
+.testimonio_contenedor .card_testimonio div p {
+  font-size: 1em;
+  margin-top: 15px;
+  font-family: "Old Standard TT", serif;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+.fixed img {
+  width: 50px;
+}
+@media (min-width: 351px) and (max-width: 800px) {
+  .fixed {
+    width: 150px;
+  }
+}
+
+.fixed_tienda {
+  position: fixed;
+  bottom: 50px;
+  left: 50px;
+}
+.fixed_tienda img {
+  width: 50px;
+}
+@media (min-width: 351px) and (max-width: 800px) {
+  .fixed_tienda {
+    left: 20px;
+    width: 100px;
+  }
+}
+
+.paginacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin: 25px;
+}
+.paginacion a {
+  color: #333;
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+.paginacion a.active {
+  background-color: #333;
+  color: #fff;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  left: 150px;
+}
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+form input[type=text],
+form input[type=email],
+form input[type=tel] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+form button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.noticia_banner,
+.testimonios_banner {
+  background-color: rgb(0, 50, 214);
+  text-align: center;
+  font-size: 1em;
+  text-transform: uppercase;
+  padding: 15px;
+  color: #fff;
+  font-family: "Old Standard TT", serif;
+  width: 100%;
+  margin: 25px;
+}
+
+.boton {
+  background-color: firebrick;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@media (min-width: 350px) {
+  .acerca-de {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .imagen {
+    flex: 1;
+    padding: 20px;
+  }
+  .contenido {
+    flex: 2;
+    padding: 20px;
+    text-align: left;
+  }
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.container .gallery__title {
+  margin-top: 50px;
+  font-size: 2rem;
+  font-weight: 300;
+}
+.container .gallery__title::after {
+  content: "";
+  display: block;
+  height: 4px;
+  background: crimson;
+  width: 200px;
+  margin-top: 20px;
+}
+.container .gallery__grid {
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 10px;
+  grid-auto-rows: 350px;
+}
+.container .gallery__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container .gallery__img:hover {
+  transform: scale(1.1);
+}
+
+.estadio_verdum {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  color: white;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 0.479) 0%, rgba(95, 7, 50, 0.39) 1%, rgba(222, 231, 224, 0.315) 256%), url(../img/estadiojpg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.estadio_verdum .sedes_entrenamineto {
+  width: 80%;
+  margin: 45px;
+}
+.estadio_verdum .sedes_entrenamineto .card img {
+  width: 60vh;
+}
+.estadio_verdum .sedes_entrenamineto .carousel-caption h5 {
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+.estadio_verdum .sedes_entrenamineto .carousel-caption li {
+  list-style: none;
+}
+@media (min-width: 350px) and (max-width: 800px) {
+  .estadio_verdum .card img {
+    width: 30vh;
+  }
+  .estadio_verdum .carousel-caption li {
+    font-size: 10px;
+  }
+}
+
+.slide {
+  margin-top: 10px;
+}
+.slide img {
+  height: 70vh;
+}
+
+.acerca-de {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+}
+.acerca-de .imagen {
+  flex: 1;
+  padding: 20px;
+}
+.acerca-de .imagen img {
+  width: 100%;
+}
+.acerca-de .contenido h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.acerca-de .contenido p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+@media (min-width: 350px) and (max-width: 800px) {
+  .acerca-de {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .acerca-de .imagen {
+    flex: 1;
+    padding: 20px;
+  }
+}
+
+.calendario {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  color: white;
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgba(121, 9, 63, 0.5) 1%, rgb(0, 50, 214) 256%), url(../img/carrusel3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calendario div {
+  max-width: 70vw;
+  text-align: center;
+}
+.calendario div p {
+  font-family: "Old Standard TT", serif;
+  font-size: 3rem;
+  margin: 40px;
+}
+
+.hero_contacto {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  color: white;
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgba(121, 9, 63, 0.5) 1%, rgb(0, 50, 214) 256%), url(../img/galeriaCuatro.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero_contacto div {
+  max-width: 70vw;
+  text-align: center;
+}
+.hero_contacto div p {
+  font-family: "Old Standard TT", serif;
+  font-size: 3rem;
+  margin: 40px;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #333;
+  color: white;
+  padding: 30px 0;
+}
+footer .footer-section {
+  flex-basis: calc(33.33% - 20px);
+  padding: 0 20px;
+}
+footer .footer-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+@media (min-width: 350px) and (max-width: 800px) {
+  footer .footer-section {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+}
+footer div img {
+  width: 40px;
+  margin: 35px;
+}
+
+#eventos {
+  border-top: 2px solid #333;
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#eventos .evento {
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  padding: 15px;
+  flex: 1 1 calc(50% - 20px); /* 2 eventos por fila en dispositivos móviles */
+  margin-bottom: 50px;
+}
+#eventos .evento:hover {
+  transform: scale(1.1);
+  background-color: rgba(66, 66, 233, 0.658);
+}
+#eventos .evento h3 {
+  margin-top: 0;
+}
+#eventos .evento p {
+  margin: 8px 0;
+  font-size: 0.9em;
+  color: #555;
+}
+#eventos .evento p strong {
+  color: #333;
+}
+@media (min-width: 768px) {
+  #eventos {
+    /* A partir de 768px de ancho, cambia el diseño para 4 eventos por fila */
+  }
+  #eventos .evento {
+    flex: 1 1 calc(25% - 20px);
+  }
+}
+
+@media (min-width: 350px) and (max-width: 800px) {
+  iframe {
+    width: 100%;
+  }
+}/*# sourceMappingURL=estilos.css.map */

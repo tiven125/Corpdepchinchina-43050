@@ -5,13 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--? Open Graph -->
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Escuela de Fútbol Corporación Deportiva Chinchiná" />
+    <meta property="og:description"
+        content="¡Únete a nuestra emocionante escuela de fútbol en Chinchiná! Aprendizaje, diversión y trabajo en equipo para niños y jóvenes." />
+    <!-- <meta property="og:url" content="" />
+    <meta property="og:image" content="" /> -->
+
+
+    <!--? description -->
+    <meta name="description"
+        content="Únete a la Corporación Deportiva Chinchiná y descubre una experiencia única en la formación futbolística. Nuestra escuela ofrece entrenamiento de calidad, valores de equipo y desarrollo integral para jugadores de todas las edades. ¡Inscribe a tus hijos y únete a nuestra pasión por el fútbol!">
+    <!--? palabras claves -->
+    <meta name="keywords"
+        content="Corporación Deportiva Chinchiná, escuela de fútbol, formación futbolística, entrenamiento de fútbol, valores de equipo, desarrollo integral, jugadores, Chinchiná, fútbol juvenil, academia deportiva, educación deportiva, fútbol infantil, técnica de fútbol, deporte en Chinchiná, equipo deportivo, entrenadores profesionales, pasión por el fútbol">
+
+    <link rel="icon" href="img/favicon.ico" type="image/png">
     <!--? bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Corpdepchinchina </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>CorpDepChinchiná Forjando Pasiones </title>
 </head>
+
+
 
 <body>
 
@@ -36,7 +58,12 @@
         <!--? Section hero -->
         <section class="hero">
             <div>
-                <p> ¡Inscríbete en el Corporación Deportiva Atlético Chinchiná y sé parte del equipo ganador! ¡Únete
+                <p class="animate__animated animate__lightSpeedInRight "> ¡Inscríbete en el Corporación Deportiva
+                    Atlético Chinchiná
+
+                </p>
+                <p class="animate__animated animate__lightSpeedInLeft animate__delay-1s ">
+                    y sé parte del equipo ganador! ¡Únete
                     ahora!
                 </p>
                 <a href="#" class="boton">Mas informacion</a>
@@ -47,7 +74,7 @@
 
         <!--? Section Noticias -->
         <section>
-            <div class="noticia">
+            <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" class="noticia">
                 <div class="imagen_noticia">
                     <img src="./img/Noticia1.jpg" alt="Imagen de la noticia 1">
                 </div>
@@ -64,7 +91,7 @@
                 </div>
 
             </div>
-            <div class="noticia">
+            <div data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000" class=" noticia">
                 <div class="imagen_noticia">
                     <img src="./img/Noticia2.jpg" alt="Imagen de la noticia 2">
                 </div>
@@ -82,7 +109,7 @@
                     </p>
                 </div>
             </div>
-            <div class="noticia">
+            <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" class="noticia">
                 <div class="imagen_noticia">
                     <img src="img/noticia3.jpg" alt="Imagen de la noticia 3">
                 </div>
@@ -112,7 +139,7 @@
         <div class="noticia_banner">Categorias</div>
 
         <section class="categorias">
-            <div class="categoria">
+            <div data-aos="flip-left" data-aos-delay="1000" class="categoria">
                 <h2 class="categorias_titulo">ESTIMULACIÓN DEPORTIVA</h2>
                 <img src="img/categorias1.jpg" alt="Categoría1">
 
@@ -122,7 +149,7 @@
             </div>
 
 
-            <div class="categoria">
+            <div data-aos="flip-left" data-aos-delay="1000" class="categoria">
                 <h2 class="categorias_titulo">INICIACIÓN DEPORTIVA</h2>
                 <img src="img/categora2.jpg" alt="categoria 2">
                 <p class="categorias_parrafo"> Proceso deportivo para niños 5 a 7, donde continuamos el desarrollo de
@@ -131,7 +158,7 @@
 
             </div>
 
-            <div class="categoria">
+            <div data-aos="flip-left" data-aos-delay="1000" class="categoria">
                 <h2 class="categorias_titulo">FORMACIÓN DEPORTIVA</h2>
                 <img src="img/categoria3.jpg" alt="categoria 3">
                 <p class="categorias_parrafo">Iniciamos el desarrollo de la inteligencia de juego el trabajo técnico –
@@ -139,7 +166,7 @@
 
             </div>
 
-            <div class="categoria">
+            <div data-aos="flip-left" data-aos-delay="1000" class="categoria">
                 <h2 class="categorias_titulo">ESPECIALIZACIÓNA</h2>
                 <img src="img/categoria4.jpg" alt="categoria4">
                 <p class="categorias_parrafo">Potenciamos las capacidades físicas e inteligencia de juego para la
@@ -163,7 +190,7 @@
 
         <section class="testimonio">
             <div class="testimonio_contenedor">
-                <div class="card_testimonio">
+                <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="card_testimonio">
                     <img src="img/testimonio.jpg" alt="">
                     <p>la Escuela de Fútbol Deportiva Atlético Chinchiná es impresionante. Los entrenadores son
                         dedicados
@@ -175,7 +202,7 @@
 
                 </div>
 
-                <div class="card_testimonio">
+                <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="card_testimonio">
                     <img src="img/testimonio2.jpg" alt="">
                     <p> Mi hijo ha mejorado mucho y ha hecho amistades duraderas. Recomiendo esta escuela a
                         todos
@@ -245,10 +272,11 @@
                 <a href="https://www.instagram.com/tiven125/" target="_blank"><img src="img/instagram.png" alt=""></a>
             </div>
         </div>
+        <div class="copyright">
+            <p>Derechos de autor © Corporación Deportiva Atlético Chinchiná. Todos los derechos reservados.</p>
+        </div>
     </footer>
-    <div class="copyright">
-        <p>Derechos de autor © Corporación Deportiva Atlético Chinchiná. Todos los derechos reservados.</p>
-    </div>
+
 
 
 
@@ -256,6 +284,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/app.js"></script>
+
 </body>
 
 </html>

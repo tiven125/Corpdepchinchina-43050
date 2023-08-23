@@ -1,0 +1,17 @@
+{
+  "name": "wokbook",
+  "version": "1.0.0",
+  "description": "![Logo de Corpdepchinchina](https://scontent.feoh2-1.fna.fbcdn.net/v/t1.6435-9/106536997_1383548811855478_7314872544272726701_n.jpg?_nc_cat=105&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeG2ilK2ThNawhpRMLFc7SyZlNAZn2RiQ1iU0BmfZGJDWIw4abSGp7jyaJaO0h1Wg1dO2H0DpXIEP0qpUByH-SGd&_nc_ohc=B-Tqw_S7RXcAX9bItdd&_nc_ht=scontent.feoh2-1.fna&oh=00_AfAQjD5MzlaTRbhzLs3nuoXHYFRaBKjf9NhfReus_K3i6A&oe=64F94B3F)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1,",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.0.1"
+  }
+}
