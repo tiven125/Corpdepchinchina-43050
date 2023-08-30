@@ -289,7 +289,7 @@ form button {
   padding: 15px;
   color: #fff;
   font-family: "Old Standard TT", serif;
-  width: 90%;
+  width: 95%;
   margin: 25px;
 }
 
@@ -303,6 +303,7 @@ form button {
   font-size: 1em;
   font-weight: bold;
   text-decoration: none;
+  margin: 40px;
 }
 
 @media (min-width: 350px) {
@@ -380,6 +381,7 @@ form button {
 }
 .estadio_verdum .sedes_entrenamineto .card img {
   width: 60vh;
+  margin-bottom: 25px;
 }
 .estadio_verdum .sedes_entrenamineto .carousel-caption h5 {
   font-weight: bolder;
@@ -515,33 +517,6 @@ form button {
     font-size: 1.5rem;
   }
 }
-footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  background-color: #333;
-  color: white;
-  padding: 30px 0;
-}
-footer .footer-section {
-  flex-basis: calc(33.33% - 20px);
-  padding: 0 20px;
-}
-footer .footer-section h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-@media (min-width: 350px) and (max-width: 800px) {
-  footer .footer-section {
-    flex-basis: 100%;
-    margin-bottom: 20px;
-  }
-}
-footer div img {
-  width: 40px;
-  margin: 35px;
-}
-
 #eventos {
   border-top: 2px solid #333;
   padding-top: 20px;
@@ -582,4 +557,30 @@ footer div img {
   iframe {
     width: 100%;
   }
+}
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #333;
+  color: white;
+  padding: 30px 0;
+}
+footer .footer-section {
+  flex-basis: calc(33.33% - 20px);
+  padding: 0 20px;
+}
+footer .footer-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+@media (min-width: 350px) and (max-width: 800px) {
+  footer .footer-section {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+}
+footer div img {
+  width: 40px;
+  margin: 35px;
 } /*# sourceMappingURL=estilos.css.map */

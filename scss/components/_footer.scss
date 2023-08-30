@@ -1,0 +1,32 @@
+// Estilos finales del Footer
+footer {
+  @extend %base-styles;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #333;
+  color: white;
+  padding: 30px 0;
+
+  .footer-section {
+    flex-basis: calc(33.33% - 20px);
+    padding: 0 20px;
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+  }
+
+  @media (min-width: 350px) and (max-width: 800px) {
+    .footer-section {
+      flex-basis: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  div img {
+    width: 40px;
+    margin: 35px;
+  }
+}

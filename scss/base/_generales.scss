@@ -1,0 +1,39 @@
+// Mixins
+@mixin cta-link {
+  text-decoration: none;
+  color: $red-color;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+    color: $blue-color;
+    cursor: pointer;
+  }
+}
+
+@mixin backgroundimagen {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+@mixin flexiblecenter($dis, $just, $align) {
+  display: $dis;
+  justify-content: $just;
+  align-items: $align;
+}
+
+@mixin contenedorImagen {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  color: white;
+}
+
+// Extends
+%base-styles {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
