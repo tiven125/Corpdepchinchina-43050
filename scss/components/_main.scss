@@ -37,6 +37,8 @@
 .noticia {
   @extend %base-styles;
   @include flexiblecenter(flex, center, center);
+  width: 90%;
+  margin: 0 auto;
   margin: 40px;
   padding: 10px;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
@@ -77,6 +79,8 @@
 // Categorias
 .categorias {
   @extend %base-styles;
+  margin: 0 auto;
+  width: 80%;
   display: grid;
   grid-template-columns: repeat(2, minmax(250px, 1fr));
   gap: 10px;
@@ -236,8 +240,8 @@ form {
   padding: 15px;
   color: #fff;
   font-family: "Old Standard TT", serif;
-  width: 95%;
-  margin: 25px;
+  width: 92%;
+  margin: 30px;
 }
 
 // Boton
@@ -252,6 +256,7 @@ form {
   font-weight: bold;
   text-decoration: none;
   margin: 40px;
+  margin-top: 35px;
 }
 
 @media (min-width: 350px) {
@@ -328,21 +333,11 @@ form {
 
   .sedes_entrenamineto {
     @extend %base-styles;
-    width: 80%;
+    width: 85%;
     margin: 45px;
 
-    .card img {
-      width: 60vh;
-      margin-bottom: 25px;
-    }
-
-    .carousel-caption h5 {
-      font-weight: bolder;
-      font-size: 1.5rem;
-    }
-
-    .carousel-caption li {
-      list-style: none;
+    .card-body {
+      margin: 50px;
     }
   }
 
@@ -354,6 +349,10 @@ form {
       font-size: 10px;
     }
   }
+}
+
+.carousel-caption li {
+  list-style: none;
 }
 
 // Css Sobre nosotros
